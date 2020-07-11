@@ -82,9 +82,11 @@ body{
 }
 #box a:hover div:first-child {
     transform: rotateY(-180deg);
+    backface-visibility: hidden;
 }
 #box a:focus div:first-child {
     transform: rotateY(-180deg);
+    backface-visibility: hidden;
 }
 #box a div:last-child {
     background:white;
@@ -94,6 +96,7 @@ body{
     height: 100%;
     border-radius: 25%;
     text-align: left;
+    backface-visibility: hidden;
 }
 #box a:hover div:last-child {
     transform: rotateY(0);
