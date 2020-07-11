@@ -31,13 +31,7 @@ body{
     width: 35px;
     border-radius: 10px;
 }
-#icon img:hover{
-    border-radius: 11px;
-    height: 36px;
-    width: 36px;
-    border: 6px solid whitesmoke;
-    filter: drop-shadow(3px 3px 1px gray);
-}
+
 #icon img:focus{
     border-radius: 11px;
     height: 36px;
@@ -95,9 +89,7 @@ body{
     border-radius: 25%;
     text-align: left;
 }
-#box a:hover div:last-child {
-    transform: rotateY(0);
-}
+
 #box a:focus div:last-child {
     transform: rotateY(0);
 }
@@ -137,14 +129,7 @@ body{
     text-shadow:0 -2px 1px gray;
     font-weight: normal;
 }
-#header table tr td a:hover{
-    height: 30px;
-    color: whitesmoke;
-    text-align: left;
-    margin-bottom: 2%;
-    font-size: 50px;
-    text-shadow:0 5px -4px gray;
-}
+
 #header table tr td a:focus{
     height: 30px;
     color: whitesmoke;
