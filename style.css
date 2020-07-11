@@ -1,0 +1,162 @@
+body{
+    background-size: 100%;
+    background: black;
+    padding: 30px 90px;
+    text-align: center;
+}
+.box h1{
+    font-family: "Quark Cheese - Personal Use";
+    font-size: 100px;
+    color: whitesmoke;
+    text-shadow: 0.5px 2px 3px #c4b59d, 0 -0.5px 0.5px gold;
+    margin-top: 5px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #fff;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.box h2{
+    font-size: 20px;
+    font-family: "Arial";
+    color: whitesmoke;
+    padding: 5px 100px;
+    background: none;
+    text-shadow: none;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    margin-top: 3px;
+}
+.F img{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+#icon img:hover{
+    border-radius: 11px;
+    height: 36px;
+    width: 36px;
+    border: 6px solid whitesmoke;
+    filter: drop-shadow(3px 3px 1px gray);
+}
+#icon img:focus{
+    border-radius: 11px;
+    height: 36px;
+    width: 36px;
+    border: 6px solid whitesmoke;
+    filter: drop-shadow(3px 3px 1px gray);
+}
+#box{
+    text-align: center;
+    height: 360px;
+    width: 360px;
+    background-color: black;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    top: 100px;
+}
+#box:last-child{
+    margin-right: 0;
+}
+#box a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+}
+#box a div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:black;
+    transform-style: preserve-3d;
+    transition: 1.1s ease-in-out;
+    backface-visibility: hidden;
+}
+#box a div:first-child {
+    transform: rotateY(0);
+    z-index: 10;
+}
+#box a:hover div:first-child {
+    transform: rotateY(-180deg);
+}
+#box a:focus div:first-child {
+    transform: rotateY(-180deg);
+}
+#box a div:last-child {
+    background:white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    text-align: left;
+}
+#box a:hover div:last-child {
+    transform: rotateY(0);
+}
+#box a:focus div:last-child {
+    transform: rotateY(0);
+}
+#box a div h2 {
+    margin: 9px auto 15px;
+    padding: 5px 0;
+    width: 80%;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px black solid;
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+}
+#box a div img {
+    border: 2px solid whitesmoke;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+}
+#boxt{
+    height: 100vh;
+    text-align: center;
+}
+#box1{
+    height: 385px;
+    width: 360px;
+    background-color: black;
+}
+#header{
+    height: 30px;
+    color: whitesmoke;
+    font-family: "Quark Cheese - Personal Use";
+    text-align: left;
+    margin-bottom: 2%;
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow:0 -2px 1px gray;
+    font-weight: normal;
+}
+#header table tr td a:hover{
+    height: 30px;
+    color: whitesmoke;
+    text-align: left;
+    margin-bottom: 2%;
+    font-size: 50px;
+    text-shadow:0 5px -4px gray;
+}
+#header table tr td a:focus{
+    height: 30px;
+    color: whitesmoke;
+    text-align: left;
+    margin-bottom: 2%;
+    font-size: 50px;
+    text-shadow:0 5px -4px gray;
+}
+#box a div ul li{
+    list-style-image: url("list.jpg");
+    font-family: "Arial";
+    margin: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
