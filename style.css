@@ -97,9 +97,11 @@ body{
 }
 #box a:hover div:last-child {
     transform: rotateY(0);
+    backface-visibility: hidden;
 }
 #box a:focus div:last-child {
     transform: rotateY(0);
+    backface-visibility: hidden;
 }
 #box a div h2 {
     margin: 9px auto 15px;
