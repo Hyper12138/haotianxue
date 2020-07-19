@@ -1,0 +1,77 @@
+#box{
+    text-align: center;
+    height: 360px;
+    width: 360px;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
+    top: 100px;
+}
+#box:last-child{
+    margin-right: 0;
+}
+#box a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    perspective: 800px;
+}
+#box a div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:black;
+    transform-style: preserve-3d;
+    transition: 1.1s ease-in-out;
+    backface-visibility: hidden;
+}
+#box a div:first-child {
+    transform: rotateY(0);
+    z-index: 10;
+}
+#box a:hover div:first-child {
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+#box a:focus div:first-child {
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+}
+#box a div:last-child {
+    background:white;
+    transform: rotateY(180deg);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    text-align: left;
+    backface-visibility: hidden;
+}
+#box a:hover div:last-child {
+    transform: rotateY(0);
+    backface-visibility: hidden;
+}
+#box a:focus div:last-child {
+    transform: rotateY(0);
+    backface-visibility: hidden;
+}
+#box a div h2 {
+    margin: 9px auto 15px;
+    padding: 5px 0;
+    width: 80%;
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px black solid;
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+}
+#box a div img {
+    border: 2px solid whitesmoke;
+    border-radius: 25%;
+    width: 100%;
+    height: 100%;
+}
