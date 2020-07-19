@@ -1,0 +1,36 @@
+.intro {
+    height: 100vh;
+    position: relative;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.project{
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+}
+.project section {
+    height: 100vh;
+    color: black;
+}
+
+.project section h1 {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 80px;
+}
