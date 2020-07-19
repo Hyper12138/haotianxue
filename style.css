@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .box h1{
     font-family: "Quark Cheese - Personal Use";
@@ -51,7 +52,6 @@ body{
     background-size: 100%;
     padding: 30px 90px;
     text-align: center;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 #box1{
     height: 385px;
