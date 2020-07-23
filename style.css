@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .box h1{
     font-family: "Quark Cheese - Personal Use";
@@ -32,48 +31,61 @@ body{
     border-radius: 10px;
     border: 4px solid whitesmoke;
 }
-#icon img:hover{
+.icon img:hover{
     border-radius: 11px;
     height: 36px;
     width: 36px;
     border: 6px solid whitesmoke;
     filter: drop-shadow(3px 3px 1px gray);
 }
-#icon img:focus{
+.icon img:focus{
     border-radius: 11px;
     height: 36px;
     width: 36px;
     border: 6px solid whitesmoke;
-    filter: drop-shadow(3px 3px 1px gray);
+    filter: drop-shadow(3px 3px 1px #808080);
 }
 #intro1{
-    height: 900px;
+    height: 100vh;
     text-align: center;
     background-size: 100%;
     padding: 30px 90px;
     text-align: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 #box1{
-    height: 385px;
+    height: 435px;
     width: 360px;
     background-color: rgba(0,0,0,0);
 }
 #header{
-    height: 30px;
-    color: whitesmoke;
+    height: 50px;
+    width: 100vw;
     font-family: "Quark Cheese - Personal Use";
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color: #434343;
+    left: 0;
     text-align: left;
-    margin-bottom: 2%;
-    font-size: 40px;
+}
+#header table tr td a{
+    color: white;
+    text-align: right;
     text-decoration: none;
-    text-shadow:0 -2px 1px gray;
+    font-size: 40px;
     font-weight: normal;
+    text-shadow:0 -2px 1px gray;
+    margin-bottom: 2%;
+    margin-top: 8%;
+}
+#header table tr td{
+    width: 90px;
 }
 #header table tr td a:hover{
     height: 30px;
     color: whitesmoke;
     text-align: left;
-    margin-bottom: 2%;
     font-size: 50px;
     text-shadow:0 5px -4px gray;
 }
@@ -91,4 +103,28 @@ body{
     margin: 10%;
     font-size: 20px;
     font-weight: bold;
+}
+.scroll{
+    height: 60px;
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    right:0;
+    margin: auto;
+    animation: jump 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    0% { transform: translate(0, 5px);}
+    10% { transform: translate(0, 5px);}
+    20% { transform: translate(0, 5px);}
+    30% { transform: translate(0, 5px);}
+    40% { transform: translate(0, 5px);}
+    50% { transform: translate(0, 5px);}
+    60% { transform: translate(0, 5px);}
+    70% { transform: translate(0, 5px);}
+    80% { transform: translate(0, 5px);}
+    90% { transform: translate(0, -50px);}
+    100% { transform: translate(0, 5px);}
 }
