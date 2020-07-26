@@ -1,7 +1,7 @@
 .intro {
     height: 100vh;
     position: relative;
-    z-index: 101;
+    z-index: 103;
 }
 
 .intro video {

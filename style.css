@@ -82,6 +82,28 @@ body{
 #header table tr td{
     width: 90px;
 }
+#header table{
+    float: left;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+#header .headerimg{
+    height: 35px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 25px;
+    animation: rotate 15s;
+    animation-iteration-count: infinite;
+}
+#header .headerimg1{
+    height: 25px;
+    float: left;
+    margin-top: 15px;
+    left: 30px;
+    animation: rotatec 9s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
 #header table tr td a:hover{
     height: 30px;
     color: whitesmoke;
@@ -127,4 +149,27 @@ body{
     80% { transform: translate(0, 5px);}
     90% { transform: translate(0, -50px);}
     100% { transform: translate(0, 5px);}
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg)}
+    50% { transform: rotate(180deg)}
+    100% { transform: rotate(360deg)}
+}
+@keyframes rotatec {
+    0% { transform: rotate(0deg)}
+    50% { transform: rotate(-180deg)}
+    100% { transform: rotate(-360deg)}
+}
+#ads{
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    animation: ads 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes ads {
+    0% { transform: translate(0px, 0px);}
+    1% { transform: translate(-100px, -200px);}
+    50% { transform: translate(-100px, 100px);}
+    100% { transform: translate(200px, 100px);}
 }
