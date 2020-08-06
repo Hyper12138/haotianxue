@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-text-size-adjust:none; 
 }
 
 html {
+  -webkit-text-size-adjust: none;
   font-size: 6.25%;
 }
 
@@ -137,7 +137,7 @@ nav ul {
   flex: 1 1 40rem;
 }
 nav ul .Home {
-  margin: 20rem 40rem 20rem 20rem;
+  margin: 20rem 35rem 20rem 20rem;
   padding: 5rem 50rem;
   border: 2rem solid;
   font-weight: bolder;
@@ -150,6 +150,7 @@ nav ul .Projects {
   margin: 20rem;
   border: 2rem solid;
   padding: 5rem 30rem;
+  font-weight: bold;
 }
 nav .notification {
   display: flex;
@@ -162,11 +163,13 @@ nav .notification {
 
 @media screen and (max-width: 1277px) {
   html {
+    -webkit-text-size-adjust: none;
     font-size: 5.3%;
   }
 }
 @media screen and (max-width: 1195px) {
   html {
+    -webkit-text-size-adjust: none;
     font-size: 4.5%;
   }
 
@@ -176,6 +179,7 @@ nav .notification {
 }
 @media screen and (width: 1024px) {
   html {
+    -webkit-text-size-adjust: none;
     font-size: 4.5%;
   }
 
@@ -214,6 +218,7 @@ nav .notification {
 }
 @media screen and (max-width: 812px) {
   html {
+    -webkit-text-size-adjust: none;
     font-size: 4.5%;
   }
 
@@ -238,6 +243,7 @@ nav .notification {
 }
 @media screen and (max-width: 683px) {
   html {
+    -webkit-text-size-adjust: none;
     font-size: 4.5%;
   }
 
