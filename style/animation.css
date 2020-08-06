@@ -1,0 +1,40 @@
+#dot{
+    animation: up 2s linear infinite alternate;
+}
+#foot{
+    animation: rotate15 1s linear infinite alternate;
+    transform-origin: top left;
+    transform-box: fill-box;
+}
+#lleaf{
+    animation: rotaten15 2s linear infinite alternate;
+    transform-origin: bottom right;
+    transform-box: fill-box;
+}
+#rleaf{
+    animation: rotate15 2s linear infinite alternate;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}
+#leaf{
+    animation: rotate15 2s linear infinite alternate;
+    transform-origin: bottom right;
+    transform-box: fill-box;
+}
+#head{
+    animation: rotate15 2s linear infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes rotate15{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(15deg);}
+}
+@keyframes rotaten15{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-15deg);}
+}
+@keyframes up{
+    from{transform: translateY(0);}
+    to{transform: translateY(-5%);}
+}

@@ -1,0 +1,117 @@
+$header1: calc(18rem + 1vw);
+$header2: calc(57rem + 1vw);
+$header3:calc(20rem + 1vw);
+$header4: calc(15rem + 1vw);
+$content: calc(10rem + 1vw);
+$text-colourg: #EFEFEF;
+$gradient: linear-gradient(left, #00BFA8, #045FD1);
+$backgroundc: #282828;
+
+@mixin flex($justify-content, $align-items, $flex-direction){
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+@import "global";
+@import "body";
+@import "header";
+@import "footer";
+
+@media screen and (max-width: 1277px){
+  html{
+    font-size: 5.3%;
+  }
+}
+@media screen and (max-width: 1195px){
+  html{
+    font-size: 4.5%;
+  }
+  svg{
+    width: 100%;
+  }
+}
+@media screen and (width: 1024px){
+  html{
+    font-size: 4.5%;
+  }
+  body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+  .illustration-bg{
+    display: none;
+  }
+  svg{
+    width: 100%;
+  }
+  .about-me{
+    position: relative;
+  }
+  .about-me-text{
+    position: absolute;
+    top: 0;
+    width: 70vw;
+    h2{
+      border: #EFEFEF solid 3rem;
+      border-radius: 15rem;
+      background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#045FD1), to(#00BFA8));
+    }
+  }
+  .about-me-illustration{
+    position: absolute;
+    top: 0rem;
+    width: 60vw;
+  }
+
+}
+@media screen and (max-width: 812px){
+  html{
+    font-size: 4.5%;
+  }
+  body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+  .illustration-bg{
+    display: none;
+  }
+  svg{
+    width: 100%;
+  }
+  h2{
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+    letter-spacing: 4rem;
+    font-size: 90rem;
+  }
+  }
+
+@media screen and (max-width: 683px){
+  html{
+    font-size: 4.5%;
+  }
+  body{
+    /*background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#00BFA8), to(#045FD1));*/
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+  .illustration-bg{
+    display: none;
+  }
+  svg{
+    width: 100%;
+  }
+  .about-me{
+    position: relative;
+  }
+  .about-me-text, .about-me-illustration{
+    position: absolute;
+    top: 0;
+  }
+  h2 {
+    background:
+            -webkit-gradient(linear, 0% 90%, 100% 90%, from(#045FD1), to(#00BFA8));
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+    letter-spacing: 3rem;
+    font-size: 70rem;
+  }
+}

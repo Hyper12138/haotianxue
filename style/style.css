@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 6.25%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #282828;
+}
+
+h1 {
+  font-size: calc(18rem + 1vw);
+  color: #EFEFEF;
+}
+
+li, button, label, input, a, p {
+  font-size: calc(10rem + 1vw);
+  color: #EFEFEF;
+  text-align: right;
+}
+
+h2 {
+  font-size: calc(57rem + 1vw);
+  color: #EFEFEF;
+  background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#00BFA8), to(#045FD1));
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+h3 {
+  font-size: calc(20rem + 1vw);
+  color: #EFEFEF;
+  text-align: right;
+}
+
+h4, h5 {
+  font-size: calc(15rem + 1vw);
+  color: #EFEFEF;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #EFEFEF;
+}
+
+.about-me {
+  min-height: 90vh;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-me-text {
+  display: inline-block;
+}
+.about-me-text h2 {
+  position: relative;
+  margin: 10rem;
+  border-radius: 5rem;
+}
+.about-me-text h3 {
+  position: relative;
+  right: calc(20rem + 1vw);
+}
+.about-me-text p {
+  position: relative;
+  right: calc(20rem + 1vw);
+  margin: 20rem 0;
+}
+
+.about-me-text, .about-me-illustration {
+  flex: 1 1 50rem;
+}
+
+.illustration-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.social-links {
+  text-align: right !important;
+  margin: 30rem 0;
+  letter-spacing: 50rem;
+  position: relative;
+  right: calc(20rem + 1vw);
+}
+.social-links a img:hover, .social-links a img:focus {
+  transform: translateY(-15%);
+}
+
+.main-header {
+  width: 99%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 100%;
+  /*flex-wrap: wrap;*/
+}
+nav .avatar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 10rem;
+}
+nav h1 {
+  margin: 0 calc(2rem + 1vw);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: row;
+  flex: 1 1 40rem;
+}
+nav ul .Home {
+  margin: 20rem 40rem 20rem 20rem;
+  padding: 5rem 50rem;
+  border: 2rem solid;
+  font-weight: bolder;
+  background-color: #e3e3e3;
+}
+nav ul .Home a {
+  color: #282828;
+}
+nav ul .Projects {
+  margin: 20rem;
+  border: 2rem solid;
+  padding: 5rem 30rem;
+  font-weight: bold;
+}
+nav .notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /*no use for now*/
+  flex: 1 1 20rem;
+}
+
+@media screen and (max-width: 1277px) {
+  html {
+    font-size: 5.3%;
+  }
+}
+@media screen and (max-width: 1195px) {
+  html {
+    font-size: 4.5%;
+  }
+
+  svg {
+    width: 100%;
+  }
+}
+@media screen and (width: 1024px) {
+  html {
+    font-size: 4.5%;
+  }
+
+  body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+
+  .illustration-bg {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .about-me {
+    position: relative;
+  }
+
+  .about-me-text {
+    position: absolute;
+    top: 0;
+    width: 70vw;
+  }
+  .about-me-text h2 {
+    border: #EFEFEF solid 3rem;
+    border-radius: 15rem;
+    background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#045FD1), to(#00BFA8));
+  }
+
+  .about-me-illustration {
+    position: absolute;
+    top: 0rem;
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 812px) {
+  html {
+    font-size: 4.5%;
+  }
+
+  body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+
+  .illustration-bg {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  h2 {
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+    letter-spacing: 4rem;
+    font-size: 90rem;
+  }
+}
+@media screen and (max-width: 683px) {
+  html {
+    font-size: 4.5%;
+  }
+
+  body {
+    /*background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#00BFA8), to(#045FD1));*/
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+
+  .illustration-bg {
+    display: none;
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  .about-me {
+    position: relative;
+  }
+
+  .about-me-text, .about-me-illustration {
+    position: absolute;
+    top: 0;
+  }
+
+  h2 {
+    background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#045FD1), to(#00BFA8));
+    font-family: "Quark Cheese - Personal Use";
+    font-weight: normal;
+    letter-spacing: 3rem;
+    font-size: 70rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+.about-me{
+  min-height: 90vh;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(center, center, row);
+}
+
+.about-me-text{
+  display: inline-block;
+  h2{
+    position: relative;
+    margin: 10rem;
+    border-radius: 5rem;
+  }
+
+  h3{
+    position: relative;
+    right: calc(20rem + 1vw);
+  }
+  p{
+    position: relative;
+    right: calc(20rem + 1vw);
+    margin: 20rem 0;
+  }
+}
+.about-me-text, .about-me-illustration{
+  flex: 1 1 50rem;
+}
+.illustration-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+.social-links{
+  text-align:right !important;
+  margin: 30rem 0;
+  letter-spacing: 50rem;
+  position: relative;
+  right: calc(20rem + 1vw);
+  a{
+    img:hover, img:focus{
+      transform: translateY(-15%);
+    }
+  }
+}
