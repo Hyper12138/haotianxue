@@ -7,9 +7,13 @@
 html {
   -webkit-text-size-adjust: none;
   font-size: 6.25%;
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
   background-color: #282828;
 }
