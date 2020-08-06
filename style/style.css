@@ -195,10 +195,6 @@ nav .notification {
     width: 100%;
   }
 
-  .about-me {
-    position: relative;
-  }
-
   .about-me-text {
     position: absolute;
     top: 0;
@@ -210,13 +206,13 @@ nav .notification {
     background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#045FD1), to(#00BFA8));
   }
 
-  .about-me-illustration {
+  .about-me-illustration, .about-me-text {
     position: absolute;
-    top: 0rem;
+    top: 10vh;
     width: 60vw;
   }
 }
-@media screen and (max-width: 812px) {
+@media screen and (max-width: 918px) {
   html {
     -webkit-text-size-adjust: none;
     font-size: 4.5%;
@@ -239,6 +235,15 @@ nav .notification {
     font-weight: normal;
     letter-spacing: 4rem;
     font-size: 90rem;
+  }
+
+  .about-me {
+    position: relative;
+  }
+
+  .about-me-text, .about-me-illustration {
+    position: absolute;
+    top: 0;
   }
 }
 @media screen and (max-width: 683px) {

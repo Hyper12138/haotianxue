@@ -20,11 +20,13 @@ $backgroundc: #282828;
 
 @media screen and (max-width: 1277px){
   html{
+    -webkit-text-size-adjust:none;
     font-size: 5.3%;
   }
 }
 @media screen and (max-width: 1195px){
   html{
+    -webkit-text-size-adjust:none;
     font-size: 4.5%;
   }
   svg{
@@ -33,6 +35,7 @@ $backgroundc: #282828;
 }
 @media screen and (width: 1024px){
   html{
+    -webkit-text-size-adjust:none;
     font-size: 4.5%;
   }
   body{
@@ -44,9 +47,6 @@ $backgroundc: #282828;
   svg{
     width: 100%;
   }
-  .about-me{
-    position: relative;
-  }
   .about-me-text{
     position: absolute;
     top: 0;
@@ -57,15 +57,16 @@ $backgroundc: #282828;
       background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#045FD1), to(#00BFA8));
     }
   }
-  .about-me-illustration{
+  .about-me-illustration,.about-me-text{
     position: absolute;
-    top: 0rem;
+    top: 10vh;
     width: 60vw;
   }
 
 }
-@media screen and (max-width: 812px){
+@media screen and (max-width: 918px){
   html{
+    -webkit-text-size-adjust:none;
     font-size: 4.5%;
   }
   body{
@@ -83,10 +84,19 @@ $backgroundc: #282828;
     letter-spacing: 4rem;
     font-size: 90rem;
   }
+  .about-me {
+    position: relative;
   }
+
+  .about-me-text, .about-me-illustration {
+    position: absolute;
+    top: 0;
+  }
+}
 
 @media screen and (max-width: 683px){
   html{
+    -webkit-text-size-adjust:none;
     font-size: 4.5%;
   }
   body{
