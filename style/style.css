@@ -56,15 +56,15 @@ a {
   min-height: 90vh;
   width: 95%;
   margin: auto;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
   align-items: center;
-  flex-direction: row;
+  -webkit-flex-direction: row;
 }
 
 .about-me-text {
-  display: inline-block;
+  display:  -webkit-inline-block;
 }
 .about-me-text h2 {
   position: relative;
@@ -82,7 +82,7 @@ a {
 }
 
 .about-me-text, .about-me-illustration {
-  flex: 1 1 50rem;
+  -webkit-flex: 1 1 50rem;
 }
 
 .illustration-bg {
@@ -110,30 +110,30 @@ a {
 }
 
 nav {
-  display: flex;
+  display:  -webkit-flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  -webkit-flex-direction: row;
   min-height: 10vh;
   width: 100%;
   /*flex-wrap: wrap;*/
 }
 nav .avatar {
-  display: flex;
-  justify-content: flex-start;
+  display:  -webkit-flex;
+  justify-content:  -webkit-flex-start;
   align-items: center;
-  flex-direction: row;
-  flex: 1 1 10rem;
+  -webkit-flex-direction: row;
+  -webkit-flex: 1 1 10rem;
 }
 nav h1 {
   margin: 0 calc(2rem + 1vw);
 }
 nav ul {
-  display: flex;
-  justify-content: flex-end;
+  display:  -webkit-flex;
+  justify-content:  -webkit-flex-end;
   align-items: end;
-  flex-direction: row;
-  flex: 1 1 40rem;
+  -webkit-flex-direction: row;
+  -webkit-flex: 1 1 40rem;
 }
 nav ul .Home {
   margin: 20rem 40rem 20rem 20rem;
@@ -152,12 +152,12 @@ nav ul .Projects {
   font-weight: bold;
 }
 nav .notification {
-  display: flex;
+  display:  -webkit-flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
+  -webkit-flex-direction: row;
   /*no use for now*/
-  flex: 1 1 20rem;
+  -webkit-flex: 1 1 20rem;
 }
 
 @media screen and (max-width: 1277px) {
