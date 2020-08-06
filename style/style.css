@@ -56,15 +56,15 @@ a {
   min-height: 90vh;
   width: 95%;
   margin: auto;
-  -webkit-flex-wrap: wrap;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .about-me-text {
-  display:  -webkit-inline-block;
+  display: inline-block;
 }
 .about-me-text h2 {
   position: relative;
@@ -82,7 +82,7 @@ a {
 }
 
 .about-me-text, .about-me-illustration {
-  -webkit-flex: 1 1 50rem;
+  flex: 1 1 50rem;
 }
 
 .illustration-bg {
@@ -110,30 +110,30 @@ a {
 }
 
 nav {
-  display:  -webkit-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  -webkit-flex-direction: row;
+  flex-direction: row;
   min-height: 10vh;
   width: 100%;
   /*flex-wrap: wrap;*/
 }
 nav .avatar {
-  display:  -webkit-flex;
-  justify-content:  -webkit-flex-start;
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  -webkit-flex-direction: row;
-  -webkit-flex: 1 1 10rem;
+  flex-direction: row;
+  flex: 1 1 10rem;
 }
 nav h1 {
   margin: 0 calc(2rem + 1vw);
 }
 nav ul {
-  display:  -webkit-flex;
-  justify-content:  -webkit-flex-end;
+  display: flex;
+  justify-content: flex-end;
   align-items: end;
-  -webkit-flex-direction: row;
-  -webkit-flex: 1 1 40rem;
+  flex-direction: row;
+  flex: 1 1 40rem;
 }
 nav ul .Home {
   margin: 20rem 40rem 20rem 20rem;
@@ -149,15 +149,14 @@ nav ul .Projects {
   margin: 20rem;
   border: 2rem solid;
   padding: 5rem 30rem;
-  font-weight: bold;
 }
 nav .notification {
-  display:  -webkit-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  -webkit-flex-direction: row;
+  flex-direction: row;
   /*no use for now*/
-  -webkit-flex: 1 1 20rem;
+  flex: 1 1 20rem;
 }
 
 @media screen and (max-width: 1277px) {
