@@ -83,7 +83,7 @@ a {
 .about-me-text p {
   position: relative;
   right: calc(20rem + 1vw);
-  margin: 20rem 0;
+  margin: 15rem 0;
 }
 
 .about-me-text, .about-me-illustration {
@@ -100,7 +100,7 @@ a {
 
 .social-links {
   text-align: right !important;
-  margin: 30rem 0;
+  margin: 20rem 0;
   letter-spacing: 50rem;
   position: relative;
   right: calc(20rem + 1vw);
@@ -244,10 +244,12 @@ nav .notification {
   .about-me {
     position: relative;
   }
-
-  .about-me-text, .about-me-illustration {
+  .about-me .about-me-text, .about-me .about-me-illustration {
     position: absolute;
     top: 0;
+  }
+  .about-me .about-me-text .social-links, .about-me .about-me-illustration .social-links {
+    right: 30rem;
   }
 }
 @media screen and (max-width: 683px) {
@@ -257,7 +259,6 @@ nav .notification {
   }
 
   body {
-    /*background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#00BFA8), to(#045FD1));*/
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   }
 
@@ -272,10 +273,18 @@ nav .notification {
   .about-me {
     position: relative;
   }
-
-  .about-me-text, .about-me-illustration {
+  .about-me .about-me-illustration {
     position: absolute;
     top: 0;
+  }
+  .about-me .about-me-text {
+    position: absolute;
+    top: 0;
+  }
+  .about-me .about-me-text .social-links {
+    margin: 20rem 0;
+    letter-spacing: 40rem;
+    right: 0;
   }
 
   h2 {

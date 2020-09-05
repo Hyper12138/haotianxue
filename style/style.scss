@@ -86,11 +86,13 @@ $backgroundc: #282828;
   }
   .about-me {
     position: relative;
-  }
-
-  .about-me-text, .about-me-illustration {
-    position: absolute;
-    top: 0;
+    .about-me-text, .about-me-illustration {
+      position: absolute;
+      top: 0;
+      .social-links{
+        right: 30rem;
+      }
+    }
   }
 }
 
@@ -100,7 +102,6 @@ $backgroundc: #282828;
     font-size: 4.5%;
   }
   body{
-    /*background: -webkit-gradient(linear, 0% 90%, 100% 90%, from(#00BFA8), to(#045FD1));*/
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   }
   .illustration-bg{
@@ -109,12 +110,24 @@ $backgroundc: #282828;
   svg{
     width: 100%;
   }
-  .about-me{
+  .about-me {
     position: relative;
-  }
-  .about-me-text, .about-me-illustration{
-    position: absolute;
-    top: 0;
+
+    .about-me-illustration {
+      position: absolute;
+      top: 0;
+    }
+
+    .about-me-text {
+      position: absolute;
+      top: 0;
+
+      .social-links {
+        margin: 20rem 0;
+        letter-spacing: 40rem;
+        right: 0;
+      }
+    }
   }
   h2 {
     background:
