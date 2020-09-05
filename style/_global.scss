@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust:none;
+  font-size: 6.25%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  background-color: #282828;
+}
+
+h1 {
+  font-size: $header1;
+  color: #EFEFEF;
+}
+li, button, label, input, a, p {
+  font-size: $content;
+  color: #EFEFEF;
+  text-align: right;
+}
+h2 {
+  font-size: $header2;
+  color: #EFEFEF;
+  background:
+          -webkit-gradient(linear, 0% 90%, 100% 90%, from(#00BFA8), to(#045FD1));
+  text-align: center;
+  letter-spacing: 1rem;
+}
+h3 {
+  font-size: $header3;
+  color: #EFEFEF;
+  text-align: right;
+}
+h4, h5 {
+  font-size: $header4;
+  color: #EFEFEF;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $text-colourg;
+}

@@ -1,0 +1,42 @@
+.main-header{
+  width: 99%;
+  margin: 0 0 0 auto;
+}
+
+nav{
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 100%;
+  /*flex-wrap: wrap;*/
+  .avatar{
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem
+  }
+  h1{
+    margin: 0 calc(2rem + 1vw);
+  }
+  ul{
+    @include flex(flex-end, end, row);
+    flex: 1 1 40rem;
+    .Home{
+      margin: 20rem 35rem 20rem 20rem;
+      padding: 5rem 50rem;
+      border: 2rem solid;
+      font-weight: bolder;
+      background-color: #e3e3e3;
+      a{
+        color: #282828;
+      }
+    }
+    .Projects{
+      margin: 20rem;
+      border: 2rem solid;
+      padding: 5rem 30rem;
+      font-weight: bold;
+    }
+  }
+  .notification{
+    @include flex(space-between, center, row); /*no use for now*/
+    flex: 1 1 20rem;
+  }
+}
